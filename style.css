@@ -22,7 +22,9 @@ header {
   margin-left: 10px;
   filter: drop-shadow(4px 4px 4px #333333);
 }
-
+.banner-logo img{
+  width: 100%;
+ }
 .barbearia {
   display: none;
   cursor: pointer;
