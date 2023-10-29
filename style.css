@@ -4,7 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-  background-color: #074f6e;
+  background-color: #fdfdfd;
 }
 header {
   width: 100%; 
@@ -12,19 +12,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #005aad;
+  background-color: #002b82f1;
   position: fixed;
+  box-shadow: 4px 4px 4px #333;
 }
-
 .logo img{
   width: 70px;
   height: 70px;
   margin-left: 10px;
   filter: drop-shadow(4px 4px 4px #333333);
 }
-.banner-logo img{
-  width: 100%;
- }
+
 .barbearia {
   display: none;
   cursor: pointer;
@@ -89,29 +87,153 @@ header {
     transform: scaleX(1); /* Ao passar o mouse, a linha cresce */
     transform-origin: center; /* A linha cresce para a direita */
 }
-
 /*SECAO-UM*/
 
 .banner-inicial {
     width: 100%;
     height: 100vh; /* Define a altura da seção para ocupar toda a altura da viewport */
     display: flex;
-    text-align: center;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     background-color: #c8efff;
     background-image: url('img/fundo.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
+}
+.conteudo-banner{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .titulo-h1 h1{
+  font-size: 56px;
+  padding-bottom: 20px;
   color: #fff;
 }
 .titulo-p p{
+  font-size: 24px;
   color: #fff;
-  padding: 20px 120px;
+  padding-bottom: 20px;
+}
+.button-banner button{
+  font-size: 25px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(241, 0, 0);
+  color: #fff;
+}
+.button-banner button:hover{
+  background-color: #00c700;
+  transform: scale(1.05);
+  animation: alternate ease-in-out;
+  filter: drop-shadow(4px 4px 4px #333333);
+}
 
+/* Seçao serviços*/
+.secao-servicos{
+  width: 100%;
+  height: 100vh; /* Define a altura da seção para ocupar toda a altura da viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+}
+#titulo-servico{
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.servico-conteudo p{
+  font-size: 20px;
+  padding: 0 50px;
+  text-align: center;
+}
+.box-servicos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-servicos h2{
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+.box-servicos-carro{
+  width:100%;
+  height: auto;
+  gap: 250px;
+}
+.box-servicos-carro{
+  display: flex;
+  text-align: center;
+}
+.box-carro img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.box-carro h3{
+  font-size: 16px;
+}
+.box-carro img:hover{
+  transform: scale(1.05);
+  filter: drop-shadow(2px 2px 2px #333333);
+}
+.box-servicos-moto{
+  width:100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+}
+.box-servicos-moto{
+  display: flex;
+  text-align: center;
+}
+/*secao sobre*/
+.secao-sobre {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.secao-sobre h2 {
+  font-size: 38px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.secao-sobre p {
+  font-size: 20px;
+  color: #666;
+}
+.sobre-conteudo{
+  display: flex;
+  justify-content: space-evenly;
+}
+.sobre-text{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 20px 50px 20px 120px;
+}
+.sobre-img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 120px 20px 20px;
+}
+.sobre-img img{
+  width: 100%;
 }
 /* Classe para animação */
 .animate-slide-in {
@@ -119,7 +241,6 @@ header {
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
 /* Classe para ativar a animação quando estiver visível */
 .animate-slide-in.active {
     opacity: 1;
@@ -141,7 +262,6 @@ header {
     display: flex;
     background-color: #fff;
 }
-
 
 .ame-rodape{
   width: 100%;
@@ -173,67 +293,7 @@ header {
   transform: scale(1.1);
   filter: drop-shadow(1px 1px 1px #ff0022);
 }
-/* ---- reset ---- */ 
 
-canvas{ 
-    display: block; 
-    vertical-align: bottom; 
-} 
-/* ---- particles.js container ---- */ 
-#particles-js{ 
-    position:absolute; 
-    width: 100%; 
-    height: 100%; 
-    background-color: transparent; 
-    background-image: url("img/banner-moderno-digital.jpg"); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: 50% 50%; 
-} 
-/* ---- stats.js ---- */ 
-.count-particles{ 
-    background: transparent; 
-    position: absolute; 
-    top: 48px; 
-    left: 0; 
-    width: 80px; 
-    color: #13E8E9; 
-    font-size: 
-    .8em; 
-    text-align: left; 
-    text-indent: 4px; 
-    line-height: 14px; 
-    padding-bottom: 2px; 
-    font-family: Helvetica, Arial, sans-serif; 
-    font-weight: bold; 
-} 
-.js-count-particles{ 
-    font-size: 1.1em; 
-} 
-#stats, 
-.count-particles{ 
-    -webkit-user-select: none; 
-    margin-top: 5px; 
-    margin-left: 5px; 
-} 
-#stats{ 
-    border-radius: 3px 3px 0 0; 
-    overflow: hidden; 
-} 
-.count-particles{ 
-    border-radius: 0 0 3px 3px; 
-}
-
-/*NAIMAÇÃO*/
-@keyframes scaleAnime {
-    0%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1.5;
-    }
-
-}
 
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -337,9 +397,6 @@ canvas{
   height: 100vh; /* Define a altura da seção para ocupar toda a altura da viewport */
 }
 
-.ame-secao-dois{
- 
-}
 .ame-secao-dois-um{
   width: 100%;
   height: 100vh;
@@ -361,10 +418,5 @@ canvas{
 .ame-secao-dois-um #ame-box-img{
   width: 50px;
 }
-#ame-box-img{
-  
-}
-.ame-projetos-titulo{
-  display: none;
-}
+
 }
