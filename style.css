@@ -96,10 +96,11 @@ header {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     background-color: #c8efff;
-    background-image: url('img/fundo.jpg');
+    background-image: url('img/production_id_4822721\ \(2160p\).gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    box-shadow: inset 1000px 10px 1000px 1000px #00000044;
 }
 .conteudo-banner{
   width: 80%;
@@ -140,13 +141,12 @@ header {
   align-items: center; /* Centraliza verticalmente */
 }
 #titulo-servico{
-  font-size: 38px;
-  text-align: center;
+  font-size: 38px; 
+  text-align: center; 
   margin-bottom: 20px;
 }
 .servico-conteudo p{
   font-size: 20px;
-  padding: 0 50px;
   text-align: center;
 }
 .box-servicos{
@@ -161,22 +161,37 @@ header {
 .box-servicos-carro{
   width:100%;
   height: auto;
-  gap: 250px;
+  justify-content: space-between;
 }
 .box-servicos-carro{
   display: flex;
   text-align: center;
+  justify-content: space-between;
+  gap: 80px;
 }
 .box-carro img{
-  width: 180px;
-  margin-bottom: 20px;
+  width: 200px;
+
 }
 .box-carro h3{
   font-size: 16px;
 }
 .box-carro img:hover{
   transform: scale(1.05);
-  filter: drop-shadow(2px 2px 2px #333333);
+  filter: drop-shadow(2px 2px 2px #33333333);
+  cursor: pointer;
+}
+.texto-oculto {
+  display: none; /* Comece ocultando o texto */
+  text-align: center; 
+  margin-top: 20px;
+  font-size: 18px;
+}
+.texto-oculto:hover{
+  cursor: pointer;
+}
+.texto-oculto h2{
+  color: #002b82f1;
 }
 .box-servicos-moto{
   width:100%;
@@ -184,7 +199,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 250px;
+  gap: 80px;
 }
 .box-servicos-moto{
   display: flex;
@@ -227,13 +242,15 @@ header {
 }
 .sobre-img{
   width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 120px 20px 20px;
 }
 .sobre-img img{
-  width: 100%;
+  width: 50%;
+  height: 400px;
 }
 /* Classe para animação */
 .animate-slide-in {
@@ -266,7 +283,7 @@ header {
 .ame-rodape{
   width: 100%;
   height: 100vh;
-  background-color: #5C93AA;
+  background-color: #002b82f1;
   color: #fff;
   text-align: center;
 }
@@ -419,4 +436,17 @@ header {
   width: 50px;
 }
 
+}
+
+@keyframes mover {
+  0% {
+      left: 0;
+  }
+  50% {
+      left: 50%;
+      background-color: #e74c3c;
+  }
+  100% {
+      left: 100%;
+  }
 }
