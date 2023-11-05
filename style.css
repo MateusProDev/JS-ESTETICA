@@ -14,6 +14,7 @@ header {
   align-items: center;
   background-color: #002b82f1;
   position: fixed;
+  z-index: 999;
   box-shadow: 4px 4px 4px #333;
 }
 .logo img{
@@ -100,7 +101,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: inset 1000px 10px 1000px 1000px #00000044;
+    box-shadow: inset 1000px 10px 1000px 1000px #00000093;
 }
 .conteudo-banner{
   width: 80%;
@@ -586,9 +587,15 @@ filter: drop-shadow(4px 4px 4px #333333);
   .ame-rodape-redes img{
     width: 30px;
   }
-  .rodape-text{
-    font-size: 18px;
-    padding: 0 20px;
+  .ame-rodape{
+    width: 100%;
+    height: 100vh;
+    background-color: #002b82f1;
+    color: #fff;
+    text-align: center;
+  }
+  .ame-rodape-end{
+    margin: 0;
   }
 }
 
