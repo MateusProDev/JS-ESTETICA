@@ -32,7 +32,7 @@ header {
   width: 25px;
   height: 3px;
   background-color: #fff;
-  margin: 5px;
+  margin: 5px 20px 0 0 ;
 }
 
 .nav-links {
@@ -450,3 +450,145 @@ header {
       left: 100%;
   }
 }
+
+/* Estilos para tablets (largura de tela de até 768px) */
+@media (max-width: 768px) {
+ 
+}
+/* Estilos para dispositivos móveis (celulares) - largura de tela de até 480px */
+@media (max-width: 480px) {
+/*SECAO-UM*/
+
+.banner-inicial {
+  background-image: url('img/production_id_4822721\ \(2160p\).gif');
+  background-repeat: no-repeat;;
+  background-attachment: fixed;
+  background-size: 100% 100vh;
+  box-shadow: inset 1000px 10px 1000px 1000px #00000044;
+}
+.conteudo-banner{
+width: 100%;
+padding: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+.titulo-h1 h1{
+font-size: 48px;
+padding-bottom: 20px;
+color: #fff;
+}
+.titulo-p p{
+font-size: 20px;
+color: #fff;
+padding-bottom: 20px;
+}
+.button-banner button{
+font-size: 25px;
+padding: 7px 20px;
+border-radius: 5px;
+border: none;
+background-color: rgb(241, 0, 0);
+color: #fff;
+}
+.button-banner button:hover{
+background-color: #00c700;
+transform: scale(1.05);
+animation: alternate ease-in-out;
+filter: drop-shadow(4px 4px 4px #333333);
+}
+
+/*secao serviços*/
+  .secao-servicos{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+  }
+.secao-servicos-main{
+  width: 100%;
+  height: auto;
+  padding: 40px 20px;
+}
+#titulo-servico{
+  font-size: 38px; 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+.servico-conteudo p{
+  font-size: 20px;
+  text-align: center;
+}
+.box-servicos{
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.box-servicos h2{
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+.box-servicos-carro{
+  width:100%;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+.box-carro img{
+  width: 200px;
+
+}
+.box-carro h3{
+  font-size: 16px;
+}
+.box-servicos-moto{
+  display: block;
+  width: 100%;
+}
+  /*secao sobre*/
+  .secao-sobre  {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .secao-sobre h2 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .secao-sobre p {
+    font-size: 20px;
+    color: #666;
+  }
+  .sobre-conteudo{
+    width: 100%;
+    display: block;    
+  }
+  .sobre-text{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .sobre-text p{
+    padding: 20px;
+  }
+  .sobre-img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .sobre-img img{
+    width: 100%;
+  }
+  /*rodape*/
+  .ame-rodape-redes img{
+    width: 30px;
+  }
+  .rodape-text{
+    font-size: 18px;
+    padding: 0 20px;
+  }
+}
+
