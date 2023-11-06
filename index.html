@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>JS ESTÉTICA</title>
 </head>
@@ -110,16 +111,37 @@
             </div>
         </section>
         <section class="secao-sobre" id="sobre">
-            <h2 class="animate-slide-in">Sobre Nós</h2>
-            <p class="animate-slide-in">Esta é a nossa seção de informações sobre nós. Aqui você encontrará detalhes sobre quem somos e o que fazemos.</p>
-            <div class="sobre-conteudo">
-                <div class="sobre-text">
-                    <p class="animate-slide-in">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veniam voluptatibus eos tempora corrupti. Earum cupiditate et totam vitae, accusantium impedit, distinctio consequuntur illo sit explicabo modi at quod quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <section class="container_proprietario" id="barbe">
+                <h2 id="tema_proprietario">NOSSA MISSÃO</h2>
+                <hr id="linha_proprietario">
+                <p><cite>Oferecer a nossos clientes através de um ambiente agradável, um bom atendimento com um serviço de qualidade, a fim de proporcionar o aumento da autoestima, em uma experiência única e pessoal com profissionais qualificados e bons produtos para o cuidado do seu tranporte.</cite></p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/renato.jpeg" class="d-block w-100" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/logo_lr.png" class="d-block w-100" alt="Imagem 2">
+                    </div>
                 </div>
-                <div class="sobre-img animate-slide-in">
-                    <img src="img/renato.jpeg" alt="imagem obre a empresa">
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
                 </div>
-            </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            <script src="script.js"></script>
+            </section>
         </section>
         <section class="ame-secao-rodape">
             <div class="ame-rodape" id="cont">
