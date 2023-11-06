@@ -51,6 +51,7 @@ header {
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   font-size: 18px;
+  padding: 20px 0 0 0 ;
   text-shadow: 2px 2px 5px #e7780f6c;
 } 
 .nav-links a:hover {
@@ -241,17 +242,21 @@ header {
   text-align: justify;
   padding: 20px 50px 20px 120px;
 }
-.sobre-img{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 120px 20px 20px;
+.container_proprietario{
+  padding: 0 450px;
 }
 .sobre-img img{
   width: 50%;
-  height: 400px;
+  height: 600px;
+}
+.carousel-item img{
+  width: 50%;
+  height: 600px;
+  margin: 0 auto;
+}
+.carousel-item{
+  width: 100%;
+  margin: 0 auto;
 }
 /* Classe para animação */
 .animate-slide-in {
@@ -339,7 +344,7 @@ header {
 
 .nav-links.active {
   width: 77%;
-  height: 150px;
+  height: 200px;
   display: flex;
   border-radius: 20px 0 20px 20px;
   flex-direction: column;
@@ -572,13 +577,21 @@ filter: drop-shadow(4px 4px 4px #333333);
   .sobre-text p{
     padding: 20px;
   }
-  .sobre-img{
-    width: 100%;
-    height: auto;
-    padding: 0;
+  .container_proprietario{
+    padding: 0px;
   }
   .sobre-img img{
+    width: 50%;
+    height: 400px;
+  }
+  .carousel-item img{
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .carousel-item{
     width: 100%;
+    margin: 0 auto;
   }
   /*rodape*/
   .ame-secao-rodape {
