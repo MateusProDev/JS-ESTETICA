@@ -309,12 +309,45 @@ header {
 
 .ame-rodape-redes img{
   width: 50px;
+  padding-top: 40px;
 }
 .ame-rodape-redes img:hover{
   transform: scale(1.1);
   filter: drop-shadow(1px 1px 1px #ff0022);
 }
+/* Estilos CSS personalizados para o mapa */
+.container_map {
+  padding: 0px;
+}
+.map-container {
+  position: relative;
+  margin: 0;
+  height: 0;
+  padding-bottom: 200px; /* Proporção de aspecto 4:3 (altere conforme necessário) */
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.share-button {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  background-color: #25D366; /* Cor de fundo do botão de compartilhamento */
+  color: #ffffff; /* Cor do texto do botão de compartilhamento */
+  font-size: 10px;
+  padding: 2px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
+.map_button {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;
@@ -614,7 +647,52 @@ filter: drop-shadow(4px 4px 4px #333333);
   line-height: 1.6;
   font-size: 18px;
 }
+/* Estilos CSS personalizados para o mapa */
+.container_map {
+  padding: 0px;
+}
+.map-container {
+  position: relative;
+  margin: 0;
+  height: 0;
+  padding-bottom: 200px; /* Proporção de aspecto 4:3 (altere conforme necessário) */
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.share-button {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  background-color: #25D366; /* Cor de fundo do botão de compartilhamento */
+  color: #ffffff; /* Cor do texto do botão de compartilhamento */
+  font-size: 10px;
+  padding: 2px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
+.map_button {
+  display: flex;
+  justify-content: center;
+}
 
 }
 
+.autor-pro{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #002b82f6;
+  color: #fff;
+  padding: 17px 5px 5px 5px;
+  text-align: center;
+  line-height: 1.0;
+  font-size: 12px;
+ 
+}
