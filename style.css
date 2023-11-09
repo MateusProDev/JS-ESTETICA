@@ -398,6 +398,7 @@ header {
   padding:5px;
   text-align: center;
   animation: aparecer 1.5s forwards;
+  box-shadow: 4px 4px 4px 4px #33333333;
 }
   
 @keyframes aparecer {
@@ -430,6 +431,7 @@ header {
   background-size: cover;
   top: -20px; /* Distância do topo */
   right: 0; /* Distância da direita */
+
 }
 .logo img{
   width: 70px;
