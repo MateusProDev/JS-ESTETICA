@@ -414,11 +414,11 @@ header {
 .nav-links.active li {
   font-size: 50px;
   margin-top: -12px;
-  color: #002b82f1;
+  color:  #0039acf1;
 }
 .nav-links.active li a{
   margin-top: -5px;
-  color: #002b82f1;
+  color: #0039acf1;
 }
 .nav-links.active::before {
   content: "";
