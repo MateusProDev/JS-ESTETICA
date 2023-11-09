@@ -186,18 +186,26 @@ header {
 .texto-oculto {
   display: none; /* Comece ocultando o texto */
   text-align: center; 
-  margin-top: 20px;
+  margin: 20px 0;
   font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px #33333341;
+  padding: 1px 20px 20px 20px;
+  background-color:rgba(0, 40, 121, 0.945);
+  color: #fff;
+  transition: 2s ease-out;
 }
 .texto-oculto:hover{
   cursor: pointer;
+  transform: scale(1.05);
 }
 .texto-oculto ul li{
   display: flex;
   justify-content: center;
 }
 .texto-oculto h2{
-  color: #002b82f1;
+  color: red;
 }
 .box-servicos-moto{
   width:100%;
