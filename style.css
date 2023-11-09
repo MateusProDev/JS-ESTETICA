@@ -97,7 +97,6 @@ header {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    background-color: #c8efff;
     background-image: url('img/production_id_4822721\ \(2160p\).gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -414,11 +413,11 @@ header {
 .nav-links.active li {
   font-size: 50px;
   margin-top: -12px;
-  color: #5C93AA;
+  color: #002b82f1;
 }
 .nav-links.active li a{
   margin-top: -5px;
-  color: #5C93AA;
+  color: #002b82f1;
 }
 .nav-links.active::before {
   content: "";
