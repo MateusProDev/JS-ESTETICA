@@ -524,7 +524,7 @@ margin-right: auto;
   box-shadow: inset 1000px 10px 1000px 1000px rgba(0, 0, 0, 0.603);
 }
 .titulo-h1 h1{
-font-size: 38px;
+font-size: 30px;
 padding-bottom: 20px;
 color: #fff;
 }
@@ -535,7 +535,7 @@ padding-bottom: 20px;
 }
 .button-banner button{
 font-size: 25px;
-padding: 7px 20px;
+padding: 5px 20px;
 border-radius: 5px;
 border: none;
 background-color: rgb(241, 0, 0);
