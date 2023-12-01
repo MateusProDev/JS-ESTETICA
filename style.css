@@ -255,6 +255,10 @@ padding: 20px 50px 20px 120px;
 .container_proprietario{
 padding: 0 450px;
 }
+.container_proprietario p{
+  font-size: 20px;
+  text-align: justify;
+}
 .sobre-img img{
 width: 50%;
 height: 600px;
@@ -330,6 +334,7 @@ filter: drop-shadow(1px 1px 1px #ff0022);
 padding: 0px;
 }
 .map-container {
+width: 900px;  
 position: relative;
 margin: 0;
 height: 0;
@@ -667,6 +672,7 @@ font-size: 18px;
 padding: 0px;
 }
 .map-container {
+width: 100%;
 position: relative;
 margin: 0;
 height: 0;
